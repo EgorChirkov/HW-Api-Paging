@@ -11,12 +11,15 @@ struct SeriesListView: View {
     
     @StateObject private var viewModel: SeriesListViewModel = .init()
     
+    @EnvironmentObject var routeModel: NavigationContainerViewModel
+    
     var body: some View {
-        NavigationContainerView(transition: .none) {
-            List{
-                ForEach(viewModel.topSeries, id: \.id){ movie in
-                    TopDetailRowView(movie: movie)
-                }
+        List{
+            ForEach(viewModel.topSeries, id: \.id){ movie in
+                TopDetailRowView(movie: movie)
+                    .onTapGesture {
+                        routeModel.push(screenView: AnyView(Text("\(movie.fullTitle ?? "Movie")")))
+                    }
             }
         }
         .onAppear{

@@ -14,14 +14,12 @@ struct MoviesListView: View {
     @EnvironmentObject var routeModel: NavigationContainerViewModel
     
     var body: some View {
-        NavigationContainerView(transition: .none) {
-            List{
-                ForEach(viewModel.topMovies, id: \.id){ movie in
-                    TopDetailRowView(movie: movie)
-                        .onTapGesture {
-                            routeModel.push(screenView: AnyView(Text("\(movie.fullTitle ?? "Movie")")))
-                        }
-                }
+        List{
+            ForEach(viewModel.topMovies, id: \.id){ movie in
+                TopDetailRowView(movie: movie)
+                    .onTapGesture {
+                        routeModel.push(screenView: AnyView(Text("\(movie.fullTitle ?? "Movie")")))
+                    }
             }
         }
         .onAppear{
