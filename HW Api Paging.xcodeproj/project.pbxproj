@@ -17,6 +17,12 @@
 		FCDE2C5F28F04A6100EE3DA5 /* TopDetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE2C5E28F04A6100EE3DA5 /* TopDetailRowView.swift */; };
 		FCDE2C6328F04E6E00EE3DA5 /* SeriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE2C6228F04E6E00EE3DA5 /* SeriesListView.swift */; };
 		FCDE2C6528F04E8200EE3DA5 /* SeriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE2C6428F04E8200EE3DA5 /* SeriesListViewModel.swift */; };
+		FCDE2C6928F058CA00EE3DA5 /* NavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE2C6828F058CA00EE3DA5 /* NavigationStack.swift */; };
+		FCDE2C6C28F05BA100EE3DA5 /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE2C6B28F05BA100EE3DA5 /* ConfigManager.swift */; };
+		FCDE2C6E28F05BD000EE3DA5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE2C6D28F05BD000EE3DA5 /* Router.swift */; };
+		FCDE2C7128F05CC400EE3DA5 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE2C7028F05CC400EE3DA5 /* Screen.swift */; };
+		FCDE2C7428F05E4200EE3DA5 /* NavigationContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE2C7328F05E4200EE3DA5 /* NavigationContainerViewModel.swift */; };
+		FCDE2C7828F05E9900EE3DA5 /* NavigationContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE2C7728F05E9900EE3DA5 /* NavigationContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		FCDE2C5E28F04A6100EE3DA5 /* TopDetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDetailRowView.swift; sourceTree = "<group>"; };
 		FCDE2C6228F04E6E00EE3DA5 /* SeriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesListView.swift; sourceTree = "<group>"; };
 		FCDE2C6428F04E8200EE3DA5 /* SeriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesListViewModel.swift; sourceTree = "<group>"; };
+		FCDE2C6828F058CA00EE3DA5 /* NavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStack.swift; sourceTree = "<group>"; };
+		FCDE2C6B28F05BA100EE3DA5 /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
+		FCDE2C6D28F05BD000EE3DA5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FCDE2C7028F05CC400EE3DA5 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		FCDE2C7328F05E4200EE3DA5 /* NavigationContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationContainerViewModel.swift; sourceTree = "<group>"; };
+		FCDE2C7728F05E9900EE3DA5 /* NavigationContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +78,10 @@
 		FC038E9C28EFFFD400FD4874 /* HW Api Paging */ = {
 			isa = PBXGroup;
 			children = (
-				FCCE4E8728F0237B001D3B51 /* HW-Api-Paging-Info.plist */,
+				FCDE2C7228F05D7200EE3DA5 /* Application */,
+				FCDE2C6728F058A600EE3DA5 /* Navigation */,
 				FC038EAE28F015AE00FD4874 /* Main */,
+				FCCE4E8728F0237B001D3B51 /* HW-Api-Paging-Info.plist */,
 				FC038E9D28EFFFD400FD4874 /* HW_Api_PagingApp.swift */,
 				FC038EA128EFFFD500FD4874 /* Assets.xcassets */,
 				FC038EAD28F0115A00FD4874 /* NetworkLayer */,
@@ -176,6 +190,58 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		FCDE2C6728F058A600EE3DA5 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FCDE2C7628F05E8800EE3DA5 /* ViewModel */,
+				FCDE2C7528F05E8100EE3DA5 /* View */,
+				FCDE2C6F28F05CAE00EE3DA5 /* Other */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		FCDE2C6A28F05B8F00EE3DA5 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FCDE2C6B28F05BA100EE3DA5 /* ConfigManager.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		FCDE2C6F28F05CAE00EE3DA5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FCDE2C6828F058CA00EE3DA5 /* NavigationStack.swift */,
+				FCDE2C6D28F05BD000EE3DA5 /* Router.swift */,
+				FCDE2C7028F05CC400EE3DA5 /* Screen.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FCDE2C7228F05D7200EE3DA5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FCDE2C6A28F05B8F00EE3DA5 /* Config */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FCDE2C7528F05E8100EE3DA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCDE2C7728F05E9900EE3DA5 /* NavigationContainerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCDE2C7628F05E8800EE3DA5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FCDE2C7328F05E4200EE3DA5 /* NavigationContainerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -248,14 +314,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCDE2C6E28F05BD000EE3DA5 /* Router.swift in Sources */,
+				FCDE2C7428F05E4200EE3DA5 /* NavigationContainerViewModel.swift in Sources */,
 				FCCE4E8628F0209C001D3B51 /* MoviesListViewModel.swift in Sources */,
 				FC038EB328F015FE00FD4874 /* MainView.swift in Sources */,
 				FC038E9E28EFFFD400FD4874 /* HW_Api_PagingApp.swift in Sources */,
+				FCDE2C6C28F05BA100EE3DA5 /* ConfigManager.swift in Sources */,
 				FCCE4E7F28F01D71001D3B51 /* MoviesListView.swift in Sources */,
 				FCDE2C6328F04E6E00EE3DA5 /* SeriesListView.swift in Sources */,
+				FCDE2C7828F05E9900EE3DA5 /* NavigationContainerView.swift in Sources */,
 				FC038EB528F0160A00FD4874 /* MainViewModel.swift in Sources */,
+				FCDE2C6928F058CA00EE3DA5 /* NavigationStack.swift in Sources */,
 				FCDE2C5F28F04A6100EE3DA5 /* TopDetailRowView.swift in Sources */,
 				FCDE2C6528F04E8200EE3DA5 /* SeriesListViewModel.swift in Sources */,
+				FCDE2C7128F05CC400EE3DA5 /* Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

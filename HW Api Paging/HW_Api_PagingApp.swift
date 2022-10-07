@@ -12,6 +12,7 @@ struct HW_Api_PagingApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+                .environmentObject(ConfigManager.shared.router)
         }
     }
 }

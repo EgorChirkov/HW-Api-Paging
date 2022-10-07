@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     
+    @EnvironmentObject var router: Router
+    
     @StateObject private var viewModel: MainViewModel = .init()
     
     var body: some View {

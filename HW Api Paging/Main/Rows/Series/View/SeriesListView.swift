@@ -12,9 +12,11 @@ struct SeriesListView: View {
     @StateObject private var viewModel: SeriesListViewModel = .init()
     
     var body: some View {
-        List{
-            ForEach(viewModel.topSeries, id: \.id){ movie in
-                TopDetailRowView(movie: movie)
+        NavigationContainerView(transition: .none) {
+            List{
+                ForEach(viewModel.topSeries, id: \.id){ movie in
+                    TopDetailRowView(movie: movie)
+                }
             }
         }
         .onAppear{
