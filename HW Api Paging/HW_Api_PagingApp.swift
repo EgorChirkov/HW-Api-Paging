@@ -11,7 +11,7 @@ import SwiftUI
 struct HW_Api_PagingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

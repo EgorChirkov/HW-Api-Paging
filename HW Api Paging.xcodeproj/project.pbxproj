@@ -8,17 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		FC038E9E28EFFFD400FD4874 /* HW_Api_PagingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC038E9D28EFFFD400FD4874 /* HW_Api_PagingApp.swift */; };
-		FC038EA028EFFFD400FD4874 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC038E9F28EFFFD400FD4874 /* ContentView.swift */; };
 		FC038EA228EFFFD500FD4874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC038EA128EFFFD500FD4874 /* Assets.xcassets */; };
-		FC038EA528EFFFD500FD4874 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC038EA428EFFFD500FD4874 /* Preview Assets.xcassets */; };
+		FC038EB328F015FE00FD4874 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC038EB228F015FE00FD4874 /* MainView.swift */; };
+		FC038EB528F0160A00FD4874 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC038EB428F0160A00FD4874 /* MainViewModel.swift */; };
+		FCCE4E7F28F01D71001D3B51 /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCE4E7E28F01D71001D3B51 /* MoviesListView.swift */; };
+		FCCE4E8228F01E6C001D3B51 /* NetworkLayer in Frameworks */ = {isa = PBXBuildFile; productRef = FCCE4E8128F01E6C001D3B51 /* NetworkLayer */; };
+		FCCE4E8628F0209C001D3B51 /* MoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCE4E8528F0209C001D3B51 /* MoviesListViewModel.swift */; };
+		FCDE2C5F28F04A6100EE3DA5 /* TopDetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE2C5E28F04A6100EE3DA5 /* TopDetailRowView.swift */; };
+		FCDE2C6328F04E6E00EE3DA5 /* SeriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE2C6228F04E6E00EE3DA5 /* SeriesListView.swift */; };
+		FCDE2C6528F04E8200EE3DA5 /* SeriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE2C6428F04E8200EE3DA5 /* SeriesListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC038E9A28EFFFD400FD4874 /* HW Api Paging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW Api Paging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC038E9D28EFFFD400FD4874 /* HW_Api_PagingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW_Api_PagingApp.swift; sourceTree = "<group>"; };
-		FC038E9F28EFFFD400FD4874 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC038EA128EFFFD500FD4874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FC038EA428EFFFD500FD4874 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC038EAD28F0115A00FD4874 /* NetworkLayer */ = {isa = PBXFileReference; lastKnownFileType = text; path = NetworkLayer; sourceTree = SOURCE_ROOT; };
+		FC038EB228F015FE00FD4874 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FC038EB428F0160A00FD4874 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FCCE4E7E28F01D71001D3B51 /* MoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
+		FCCE4E8528F0209C001D3B51 /* MoviesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewModel.swift; sourceTree = "<group>"; };
+		FCCE4E8728F0237B001D3B51 /* HW-Api-Paging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "HW-Api-Paging-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FCDE2C5E28F04A6100EE3DA5 /* TopDetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDetailRowView.swift; sourceTree = "<group>"; };
+		FCDE2C6228F04E6E00EE3DA5 /* SeriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesListView.swift; sourceTree = "<group>"; };
+		FCDE2C6428F04E8200EE3DA5 /* SeriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCCE4E8228F01E6C001D3B51 /* NetworkLayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +51,7 @@
 			children = (
 				FC038E9C28EFFFD400FD4874 /* HW Api Paging */,
 				FC038E9B28EFFFD400FD4874 /* Products */,
+				FCCE4E8028F01E6C001D3B51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,20 +66,114 @@
 		FC038E9C28EFFFD400FD4874 /* HW Api Paging */ = {
 			isa = PBXGroup;
 			children = (
+				FCCE4E8728F0237B001D3B51 /* HW-Api-Paging-Info.plist */,
+				FC038EAE28F015AE00FD4874 /* Main */,
 				FC038E9D28EFFFD400FD4874 /* HW_Api_PagingApp.swift */,
-				FC038E9F28EFFFD400FD4874 /* ContentView.swift */,
 				FC038EA128EFFFD500FD4874 /* Assets.xcassets */,
-				FC038EA328EFFFD500FD4874 /* Preview Content */,
+				FC038EAD28F0115A00FD4874 /* NetworkLayer */,
 			);
 			path = "HW Api Paging";
 			sourceTree = "<group>";
 		};
-		FC038EA328EFFFD500FD4874 /* Preview Content */ = {
+		FC038EAE28F015AE00FD4874 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				FC038EA428EFFFD500FD4874 /* Preview Assets.xcassets */,
+				FCDE2C5D28F04A4700EE3DA5 /* Rows */,
+				FC038EB028F015BF00FD4874 /* ViewModel */,
+				FC038EAF28F015B300FD4874 /* View */,
 			);
-			path = "Preview Content";
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FC038EAF28F015B300FD4874 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC038EB228F015FE00FD4874 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC038EB028F015BF00FD4874 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC038EB428F0160A00FD4874 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC038EB628F01D1200FD4874 /* Series */ = {
+			isa = PBXGroup;
+			children = (
+				FCDE2C6128F04E5500EE3DA5 /* ViewModel */,
+				FCDE2C6028F04E4F00EE3DA5 /* View */,
+			);
+			path = Series;
+			sourceTree = "<group>";
+		};
+		FC038EB728F01D1E00FD4874 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				FCCE4E8428F02085001D3B51 /* ViewModel */,
+				FCCE4E8328F02080001D3B51 /* View */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		FCCE4E8028F01E6C001D3B51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCCE4E8328F02080001D3B51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCCE4E7E28F01D71001D3B51 /* MoviesListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCCE4E8428F02085001D3B51 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FCCE4E8528F0209C001D3B51 /* MoviesListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FCDE2C5D28F04A4700EE3DA5 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				FC038EB728F01D1E00FD4874 /* Movies */,
+				FC038EB628F01D1200FD4874 /* Series */,
+				FCDE2C6628F0508700EE3DA5 /* Other */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		FCDE2C6028F04E4F00EE3DA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCDE2C6228F04E6E00EE3DA5 /* SeriesListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCDE2C6128F04E5500EE3DA5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FCDE2C6428F04E8200EE3DA5 /* SeriesListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FCDE2C6628F0508700EE3DA5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FCDE2C5E28F04A6100EE3DA5 /* TopDetailRowView.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +192,9 @@
 			dependencies = (
 			);
 			name = "HW Api Paging";
+			packageProductDependencies = (
+				FCCE4E8128F01E6C001D3B51 /* NetworkLayer */,
+			);
 			productName = "HW Api Paging";
 			productReference = FC038E9A28EFFFD400FD4874 /* HW Api Paging.app */;
 			productType = "com.apple.product-type.application";
@@ -125,7 +237,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC038EA528EFFFD500FD4874 /* Preview Assets.xcassets in Resources */,
 				FC038EA228EFFFD500FD4874 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +248,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC038EA028EFFFD400FD4874 /* ContentView.swift in Sources */,
+				FCCE4E8628F0209C001D3B51 /* MoviesListViewModel.swift in Sources */,
+				FC038EB328F015FE00FD4874 /* MainView.swift in Sources */,
 				FC038E9E28EFFFD400FD4874 /* HW_Api_PagingApp.swift in Sources */,
+				FCCE4E7F28F01D71001D3B51 /* MoviesListView.swift in Sources */,
+				FCDE2C6328F04E6E00EE3DA5 /* SeriesListView.swift in Sources */,
+				FC038EB528F0160A00FD4874 /* MainViewModel.swift in Sources */,
+				FCDE2C5F28F04A6100EE3DA5 /* TopDetailRowView.swift in Sources */,
+				FCDE2C6528F04E8200EE3DA5 /* SeriesListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,25 +383,27 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HW Api Paging/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7SDDGHR698;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HW-Api-Paging-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "evc.HW-Api-Paging";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evc.hw-api-paging";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -295,25 +414,27 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HW Api Paging/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7SDDGHR698;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HW-Api-Paging-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "evc.HW-Api-Paging";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evc.hw-api-paging";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +460,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FCCE4E8128F01E6C001D3B51 /* NetworkLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkLayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC038E9228EFFFD400FD4874 /* Project object */;
 }
