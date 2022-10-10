@@ -8,7 +8,7 @@
 import SwiftUI
 import NetworkLayer
 
-struct TopDetailRowView: View{
+struct TopDetailShortRowView: View{
     
     let movie: Top250DataDetail
     
@@ -54,7 +54,7 @@ struct TopDetailRowView: View{
 
 struct MostPopularDataView_Previews: PreviewProvider {
     static var previews: some View {
-        TopDetailRowView(movie: Top250DataDetail(id: "tt5491994",
+        TopDetailShortRowView(movie: Top250DataDetail(id: "tt5491994",
                                                rank: "1",
                                                title: "Planet Earth II",
                                                fullTitle: "Planet Earth II (2016)",

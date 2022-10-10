@@ -16,9 +16,9 @@ struct MoviesListView: View {
     var body: some View {
         List{
             ForEach(viewModel.topMovies, id: \.id){ movie in
-                TopDetailRowView(movie: movie)
+                TopDetailShortRowView(movie: movie)
                     .onTapGesture {
-                        routeModel.push(screenView: AnyView(Text("\(movie.fullTitle ?? "Movie")")))
+                        routeModel.push(screenView: AnyView(TopDetailFullRowView(movie: movie)))
                     }
             }
         }
