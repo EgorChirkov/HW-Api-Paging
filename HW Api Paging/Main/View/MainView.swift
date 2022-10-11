@@ -34,7 +34,7 @@ struct MainView: View {
             if !viewModel.tabItems.isEmpty{
                 TabView(selection: $viewModel.selection){
                     ForEach(viewModel.tabItems, id: \.id) { item in
-                        NavigationContainerView(transition: .none) {
+                        NavigationContainerView(transition: .custom(.slide)) {
                             view(at:item.type)
                         }
                             .tag(item.id)
